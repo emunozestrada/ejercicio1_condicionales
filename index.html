@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios Condicionales </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1>Ejercicio1:condicionales</h1>
+
+  <fieldset>
+    <legend>Ejercicio 1</legend>
+    <h2>¿Eres bellísimo/a?</h2>
+    <input id="respuesta1" type="text" placeholder="Escribe tu respuesta aquí">  
+    <input type="submit" name="enviar respuesta" onclick="enviarRespuesta1()" value="enviar respuesta">
+  </fieldset>
+
+  <fieldset>
+    <legend>Ejercicio 2</legend>
+    <h2>Escribe un número</h2>
+    <input id="numero" type="number" placeholder="Escribe tu número aquí" value="">  
+    <input type="submit" name="enviar" onclick="enviarNumero()" value="enviar">
+  </fieldset>
+
+  <fieldset>
+    <legend>Ejercicio 3</legend>
+    <button id="botonDePrueba">Determinemos si un numero es par!</button>  
+    <dialog id="prompt">      
+      <input id="numeroParImpar" type="number"  value=""> 
+      <button id="sendValor">Probar</button>
+      <button id="cierraModal">Cerrar</button>      
+    </dialog>
+  </fieldset>   
+
+  <fieldset>
+    <legend>Ejercicio 4</legend>
+    <h2>Veamos si tu numero es el ganador!</h2> 
+    <input id="winnerNumber" type="number" placeholder="Escribe aquí tu número de cliente" value="">  
+    <input type="submit" name="enviar" onclick="winnerNumber()" value="enviar">
+  </fieldset>  
+  
+  <fieldset>
+    <legend>Ejercicio 5</legend>
+    <h2>¿Cuál es el menor?</h2>
+    <input id="numero1" type="text" placeholder="Escribe aquí tu primer número">  
+    <input id="numero2" type="text" placeholder="Escribe aquí tu segundo número">  
+    <input type="submit" name="enviar respuesta" onclick="enviarNumeros()" value="enviar respuesta">
+  </fieldset>
+
+  <fieldset>
+    <legend>Ejercicio 6</legend>
+    <h2>¿Cuál es el mayor?</h2>
+    <input id="primerNumero" type="text" placeholder="Escribe aquí tu primer número">  
+    <input id="segundoNumero" type="text" placeholder="Escribe aquí tu segundo número">  
+    <input id="tercerNumero" type="text" placeholder="Escribe aquí tu tercer número">  
+    <input type="submit" name="enviar respuesta" onclick="enviarNumerosAComparar()" value="enviar respuesta">
+  </fieldset>
+
+  <fieldset>
+    <legend>Ejercicio 7</legend>
+    <h2>Días de la semana</h2>
+    <input id="dia" type="text" placeholder="Ingresa un día de la semana">  
+    <input type="submit" name="enviar respuesta" onclick="enviarDia()" value="enviar respuesta">
+  </fieldset>
+
+  <fieldset>
+    <legend>Ejercicio 8</legend>
+    <h2>Calificación(1 -10)</h2>
+    <input id="nota" type="text" min="1" max="10" placeholder="Escribe un número del 1 al 10" >  
+    <input type="submit" name="enviar respuesta" onclick="enviarnotas()" value="enviar respuesta">
+  </fieldset>
+
+  <fieldset>
+    <legend>Ejercicio 9</legend>
+    <h2>¡Escoge el topping que desees agregar a tu helado!</h2>
+      <select id="opciones">   
+        <option value="Selecciona un topping">Selecciona un topping</option>
+        <option value="sin topping"> sin topping </option>
+        <option value="topping de oreo"> topping de oreo - 10 MXN </option>
+        <option value="topping de KitKat"> topping de KitKat - 15 MXN </option>
+        <option value="topping de brownie"> topping de brownie - 20 MXN </option>               	
+      </select>
+      
+      <input type="submit" name="enviar topping" onclick="enviarTopping()" value="enviar">
+  </fieldset>
+
+  <fieldset>
+    <legend>Ejercicio 10</legend>
+    <h2>PORTAL EDUCATIVO</h2>    
+      <select id="programas">   
+        <option value="Selecciona el tipo de programa">Seleccione el tipo de programa</option>
+        <option value="curso"> curso</option>
+        <option value="carrera"> carrera </option>
+        <option value="master"> master </option>                      	
+      </select>
+
+      <select id="becas" >   
+        <option value="Seleccione tipo de beca">Seleccione tipo de beca</option>
+        <option value="Beca Facebook"> Beca Facebook</option>
+        <option value="Beca Google"> Beca Google</option>
+        <option value="Beca Jesua"> Beca Jesua</option>                      	
+      </select>  
+            
+      <input type="submit" onclick="enviarInfoProgramas()" value="enviar">       
+  </fieldset>
+
+  <fieldset>
+    <legend>Ejercicio 11</legend>
+    <h2>CÁLCULA EL VALOR A PAGAR CON BASE EN LA DISTANCIA RECORRIDA DE TÚ VEHÍCULO</h2>    
+      <select id="tipoVehiculo">   
+        <option value="Seleccione tipo de vehículo">Seleccione tipo de vehículo</option>
+        <option value="automóvil"> automóvil</option>
+        <option value="motocicleta"> motocicleta </option>
+        <option value="autobus"> autobus</option>  
+                                   	
+      </select>
+
+      <input id="litrosConsumidos" type="text" min="1" placeholder="Cantidad de litros (Lt)" >  
+      <input id="distanciaRecorrida" type="text" min="1" placeholder="distancia recorrida (Km)" >       
+            
+      <input type="submit" onclick="enviarInfoPago ()" value="enviar">       
+  </fieldset>
+
+  <script src="./index.js"></script>
+</body>
+</html>
